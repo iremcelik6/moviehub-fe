@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'https://moviehub-9b64.onrender.com/api';
+const API_BASE_URL = 'https://moviehub-9b64.onrender.com:8080/api';
 
 // API instance oluştur
 const api = axios.create({
