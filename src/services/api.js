@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'https://moviehub-9b64.onrender.com:8080/api';
+const API_BASE_URL = 'https://moviehub-9b64.onrender.com/api';
 
 // API instance oluştur
 const api = axios.create({
@@ -357,7 +357,7 @@ export const debugAPI = {
       console.log('🧪 Direct Movies API Test başlıyor...');
       
       // Direkt fetch ile test
-      const response = await fetch('https://moviehub-9b64.onrender.com:8080/api/movies', {
+      const response = await fetch('https://moviehub-9b64.onrender.com/api/movies', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -406,7 +406,7 @@ export const debugAPI = {
     
     for (const endpoint of endpoints) {
       try {
-        const response = await fetch(`https://moviehub-9b64.onrender.com:8080/api${endpoint}`);
+        const response = await fetch(`https://moviehub-9b64.onrender.com/api${endpoint}`);
         console.log(`${endpoint}: ${response.status} ${response.ok ? '✅' : '❌'}`);
       } catch (error) {
         console.log(`${endpoint}: ERROR - ${error.message} ❌`);
