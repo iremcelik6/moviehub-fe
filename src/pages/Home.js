@@ -101,7 +101,7 @@ const Home = () => {
       setBackendStatus('checking');
       
       // Backend'e test isteği gönder
-      const response = await fetch('http://localhost:8080/api/movies', {
+      const response = await fetch('https://moviehub-9b64.onrender.com:8080/api/movies', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
